@@ -1,0 +1,8 @@
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+package.bluej
+*.ctxt
+team.defs
