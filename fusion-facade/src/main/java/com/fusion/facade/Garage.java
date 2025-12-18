@@ -9,26 +9,26 @@ import com.vehiculemagique.Vehicule;
  * "vehicule-magique". Elle masque la complexité des deux modèles et expose une
  * API dédiée aux besoins métiers de la fusion.
  */
-public class FusionVehiculeSuperHeroFacade {
+public class Garage {
 
     /**
      * Prépare une session de fusion pour un héros et un véhicule.
      */
-    public FusionSession fusionner(SuperHeros hero, Vehicule vehicule) {
+    public Session fusionner(SuperHeros hero, Vehicule vehicule) {
         HeroProprietaireAdapter adapter = new HeroProprietaireAdapter(hero);
         adapter.assignerVehicule(vehicule);
-        return new FusionSession(adapter, vehicule);
+        return new Session(adapter, vehicule);
     }
 
     /**
      * Contexte opérationnel retourné par la façade. Il regroupe les opérations
      * utiles côté client tout en conservant l'adapter sous-jacent.
      */
-    public static final class FusionSession {
+    public static final class Session {
         private final HeroProprietaireAdapter adapter;
         private final Vehicule vehicule;
 
-        private FusionSession(HeroProprietaireAdapter adapter, Vehicule vehicule) {
+        private Session(HeroProprietaireAdapter adapter, Vehicule vehicule) {
             this.adapter = adapter;
             this.vehicule = vehicule;
         }
@@ -53,7 +53,7 @@ public class FusionVehiculeSuperHeroFacade {
 
         /** Produit un message compréhensible par les deux univers. */
         public String presentation() {
-            return adapter.descriptionFusion(vehicule);
+            return adapter.description(vehicule);
         }
     }
 }

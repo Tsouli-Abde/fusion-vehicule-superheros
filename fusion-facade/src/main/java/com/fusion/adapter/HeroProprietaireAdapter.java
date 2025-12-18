@@ -51,7 +51,7 @@ public class HeroProprietaireAdapter {
     /**
      * Construit une description textuelle fusionnant les deux univers.
      */
-    public String descriptionFusion(Vehicule vehicule) {
+    public String description(Vehicule vehicule) {
         String base = hero.toString();
         String proprietaireNom = proprietaire.getNom();
         return base + " et je pilote le vehicule " + vehicule.getImmatriculation()

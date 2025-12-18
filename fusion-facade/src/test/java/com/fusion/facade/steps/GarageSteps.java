@@ -2,20 +2,21 @@ package com.fusion.facade.steps;
 
 import com.dauphine.SuperHeros;
 import com.dauphine.Univers;
-import com.fusion.facade.FusionVehiculeSuperHeroFacade;
+import com.fusion.facade.Garage;
 import com.vehiculemagique.Vehicule;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class FusionSteps {
+public class GarageSteps {
 
     private SuperHeros hero;
     private Vehicule vehicule;
-    private FusionVehiculeSuperHeroFacade.FusionSession session;
+    private Garage.Session session;
 
     @Given("un super héros {string} avec le pouvoir {string} dans l'univers {string}")
     public void creerHero(String nom, String pouvoir, String univers) {
@@ -30,7 +31,7 @@ public class FusionSteps {
 
     @When("j'associe le héros au véhicule via la façade")
     public void associerAvecFacade() {
-        FusionVehiculeSuperHeroFacade facade = new FusionVehiculeSuperHeroFacade();
+        Garage facade = new Garage();
         session = facade.fusionner(hero, vehicule);
     }
 

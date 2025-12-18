@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FusionVehiculeSuperHeroFacadeTest {
+class GarageTest {
 
     @Test
     void facadeAssocieHeroEtVehiculeEtCalculeAssurance() {
@@ -15,8 +15,8 @@ class FusionVehiculeSuperHeroFacadeTest {
         hero.setUnivers(new Univers("DC"));
         Vehicule vehicule = new Vehicule("BAT-001");
 
-        FusionVehiculeSuperHeroFacade facade = new FusionVehiculeSuperHeroFacade();
-        FusionVehiculeSuperHeroFacade.FusionSession session = facade.fusionner(hero, vehicule);
+        Garage facade = new Garage();
+        Garage.Session session = facade.fusionner(hero, vehicule);
 
         session.enregistrerMission(150);
         assertEquals(150, session.getVehicule().getKilometrage());

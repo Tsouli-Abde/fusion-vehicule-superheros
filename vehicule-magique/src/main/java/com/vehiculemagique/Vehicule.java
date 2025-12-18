@@ -17,7 +17,7 @@ public class Vehicule {
     public void setImmatriculation(String immatriculation) { this.immatriculation = immatriculation; }
     public int getKilometrage() { return kilometrage; }
     public void setKilometrage(int kilometrage) { this.kilometrage = kilometrage; }
-
+    
     public Proprietaire getProprietaire() { return proprietaire; }
 
     public void setProprietaire(Proprietaire nouveau) {
