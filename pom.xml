@@ -11,5 +11,6 @@
   <modules>
     <module>vehicule-magique</module>
     <module>superheros</module>
+    <module>fusion-facade</module>
   </modules>
 </project>

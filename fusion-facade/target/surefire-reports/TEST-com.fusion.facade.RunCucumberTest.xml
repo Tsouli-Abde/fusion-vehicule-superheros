@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.fusion.facade.RunCucumberTest" time="0.068" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/abderrahmanetsouli/fusion-vehicule-superheros/fusion-facade/target/test-classes:/Users/abderrahmanetsouli/fusion-vehicule-superheros/fusion-facade/target/classes:/Users/abderrahmanetsouli/fusion-vehicule-superheros/vehicule-magique/target/classes:/Users/abderrahmanetsouli/fusion-vehicule-superheros/superheros/superhero/target/classes:/Users/abderrahmanetsouli/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/abderrahmanetsouli/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/abderrahmanetsouli/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.15.0/cucumber-junit-platform-engine-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-suite/1.10.1/junit-platform-suite-1.10.1.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-suite-api/1.10.1/junit-platform-suite-api-1.10.1.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.10.1/junit-platform-suite-engine-1.10.1.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.10.1/junit-platform-suite-commons-1.10.1.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/abderrahmanetsouli/fusion-vehicule-superheros/fusion-facade/target/surefire/surefirebooter-20251218160215934_27.jar /Users/abderrahmanetsouli/fusion-vehicule-superheros/fusion-facade/target/surefire 2025-12-18T16-02-14_717-jvmRun1 surefire-20251218160215934_25tmp surefire_1-20251218160215934_26tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/abderrahmanetsouli/fusion-vehicule-superheros/fusion-facade/target/test-classes:/Users/abderrahmanetsouli/fusion-vehicule-superheros/fusion-facade/target/classes:/Users/abderrahmanetsouli/fusion-vehicule-superheros/vehicule-magique/target/classes:/Users/abderrahmanetsouli/fusion-vehicule-superheros/superheros/superhero/target/classes:/Users/abderrahmanetsouli/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/abderrahmanetsouli/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/abderrahmanetsouli/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/abderrahmanetsouli/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.15.0/cucumber-junit-platform-engine-7.15.0.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-suite/1.10.1/junit-platform-suite-1.10.1.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-suite-api/1.10.1/junit-platform-suite-api-1.10.1.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.10.1/junit-platform-suite-engine-1.10.1.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.10.1/junit-platform-suite-commons-1.10.1.jar:/Users/abderrahmanetsouli/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/abderrahmanetsouli"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/abderrahmanetsouli/fusion-vehicule-superheros/fusion-facade"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/abderrahmanetsouli/fusion-vehicule-superheros/fusion-facade/target/surefire/surefirebooter-20251218160215934_27.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.1"/>
+    <property name="user.name" value="abderrahmanetsouli"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.1.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/abderrahmanetsouli/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/r8/58h5x6_d5kb5h04jy0354cs80000gn/T/"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/Users/abderrahmanetsouli/fusion-vehicule-superheros/fusion-facade"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/abderrahmanetsouli/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25.0.1"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="Déployer un héros sur une mission motorisée" classname="Fusion des univers Super Hero et Vehicule Magique" time="0.032">
+    <system-out><![CDATA[
+Scenario: Déployer un héros sur une mission motorisée                                &amp#27;[90m# features/FusionFacade.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun super héros &amp#27;[0m&amp#27;[32m&amp#27;[1m"Batman"&amp#27;[0m&amp#27;[32m avec le pouvoir &amp#27;[0m&amp#27;[32m&amp#27;[1m"protège Gotham"&amp#27;[0m&amp#27;[32m dans l'univers &amp#27;[0m&amp#27;[32m&amp#27;[1m"DC"&amp#27;[0m &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerHero(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mun véhicule magique immatriculé &amp#27;[0m&amp#27;[32m&amp#27;[1m"BAT-001"&amp#27;[0m                                      &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerVehicule(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mj'associe le héros au véhicule via la façade&amp#27;[0m                                  &amp#27;[90m# com.fusion.facade.steps.FusionSteps.associerAvecFacade()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mj'enregistre une mission de &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m&amp#27;[32m km&amp#27;[0m                                             &amp#27;[90m# com.fusion.facade.steps.FusionSteps.enregistrerMission(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mle kilométrage du véhicule vaut &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                           &amp#27;[90m# com.fusion.facade.steps.FusionSteps.verifierKilometrage(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mle coût d'assurance estimé est &amp#27;[0m&amp#27;[32m&amp#27;[1m300&amp#27;[0m                                             &amp#27;[90m# com.fusion.facade.steps.FusionSteps.verifierAssurance(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mle message fusionné contient &amp#27;[0m&amp#27;[32m&amp#27;[1m"Batman"&amp#27;[0m&amp#27;[32m et &amp#27;[0m&amp#27;[32m&amp#27;[1m"BAT-001"&amp#27;[0m                             &amp#27;[90m# com.fusion.facade.steps.FusionSteps.verifierMessage(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.003">
+    <system-out><![CDATA[
+Scenario Outline: Réutiliser la façade pour plusieurs héros et missions                       &amp#27;[90m# features/FusionFacade.feature:27&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun super héros &amp#27;[0m&amp#27;[32m&amp#27;[1m"Batman"&amp#27;[0m&amp#27;[32m avec le pouvoir &amp#27;[0m&amp#27;[32m&amp#27;[1m"protège Gotham"&amp#27;[0m&amp#27;[32m dans l'univers &amp#27;[0m&amp#27;[32m&amp#27;[1m"DC"&amp#27;[0m          &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerHero(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mun véhicule magique immatriculé &amp#27;[0m&amp#27;[32m&amp#27;[1m"BAT-001"&amp#27;[0m                                               &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerVehicule(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun super héros &amp#27;[0m&amp#27;[32m&amp#27;[1m"SpiderMan"&amp#27;[0m&amp#27;[32m avec le pouvoir &amp#27;[0m&amp#27;[32m&amp#27;[1m"tisse des toiles"&amp#27;[0m&amp#27;[32m dans l'univers &amp#27;[0m&amp#27;[32m&amp#27;[1m"Marvel"&amp#27;[0m &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerHero(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mun véhicule magique immatriculé &amp#27;[0m&amp#27;[32m&amp#27;[1m"WEB-777"&amp#27;[0m                                               &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerVehicule(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mj'associe le héros au véhicule via la façade&amp#27;[0m                                           &amp#27;[90m# com.fusion.facade.steps.FusionSteps.associerAvecFacade()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mj'enregistre une mission de &amp#27;[0m&amp#27;[32m&amp#27;[1m50&amp#27;[0m&amp#27;[32m km&amp#27;[0m                                                       &amp#27;[90m# com.fusion.facade.steps.FusionSteps.enregistrerMission(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mle kilométrage du véhicule vaut &amp#27;[0m&amp#27;[32m&amp#27;[1m50&amp#27;[0m                                                     &amp#27;[90m# com.fusion.facade.steps.FusionSteps.verifierKilometrage(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mle coût d'assurance estimé est &amp#27;[0m&amp#27;[32m&amp#27;[1m300&amp#27;[0m                                                      &amp#27;[90m# com.fusion.facade.steps.FusionSteps.verifierAssurance(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.002">
+    <system-out><![CDATA[
+Scenario Outline: Réutiliser la façade pour plusieurs héros et missions                     &amp#27;[90m# features/FusionFacade.feature:28&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun super héros &amp#27;[0m&amp#27;[32m&amp#27;[1m"Batman"&amp#27;[0m&amp#27;[32m avec le pouvoir &amp#27;[0m&amp#27;[32m&amp#27;[1m"protège Gotham"&amp#27;[0m&amp#27;[32m dans l'univers &amp#27;[0m&amp#27;[32m&amp#27;[1m"DC"&amp#27;[0m        &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerHero(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mun véhicule magique immatriculé &amp#27;[0m&amp#27;[32m&amp#27;[1m"BAT-001"&amp#27;[0m                                             &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerVehicule(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun super héros &amp#27;[0m&amp#27;[32m&amp#27;[1m"IronMan"&amp#27;[0m&amp#27;[32m avec le pouvoir &amp#27;[0m&amp#27;[32m&amp#27;[1m"armure high-tech"&amp#27;[0m&amp#27;[32m dans l'univers &amp#27;[0m&amp#27;[32m&amp#27;[1m"Marvel"&amp#27;[0m &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerHero(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mun véhicule magique immatriculé &amp#27;[0m&amp#27;[32m&amp#27;[1m"IRN-999"&amp#27;[0m                                             &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerVehicule(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mj'associe le héros au véhicule via la façade&amp#27;[0m                                         &amp#27;[90m# com.fusion.facade.steps.FusionSteps.associerAvecFacade()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mj'enregistre une mission de &amp#27;[0m&amp#27;[32m&amp#27;[1m999&amp#27;[0m&amp#27;[32m km&amp#27;[0m                                                    &amp#27;[90m# com.fusion.facade.steps.FusionSteps.enregistrerMission(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mle kilométrage du véhicule vaut &amp#27;[0m&amp#27;[32m&amp#27;[1m999&amp#27;[0m                                                  &amp#27;[90m# com.fusion.facade.steps.FusionSteps.verifierKilometrage(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mle coût d'assurance estimé est &amp#27;[0m&amp#27;[32m&amp#27;[1m300&amp#27;[0m                                                    &amp#27;[90m# com.fusion.facade.steps.FusionSteps.verifierAssurance(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.3" classname="Examples" time="0.003">
+    <system-out><![CDATA[
+Scenario Outline: Réutiliser la façade pour plusieurs héros et missions              &amp#27;[90m# features/FusionFacade.feature:29&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun super héros &amp#27;[0m&amp#27;[32m&amp#27;[1m"Batman"&amp#27;[0m&amp#27;[32m avec le pouvoir &amp#27;[0m&amp#27;[32m&amp#27;[1m"protège Gotham"&amp#27;[0m&amp#27;[32m dans l'univers &amp#27;[0m&amp#27;[32m&amp#27;[1m"DC"&amp#27;[0m &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerHero(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mun véhicule magique immatriculé &amp#27;[0m&amp#27;[32m&amp#27;[1m"BAT-001"&amp#27;[0m                                      &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerVehicule(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun super héros &amp#27;[0m&amp#27;[32m&amp#27;[1m"Flash"&amp#27;[0m&amp#27;[32m avec le pouvoir &amp#27;[0m&amp#27;[32m&amp#27;[1m"super vitesse"&amp#27;[0m&amp#27;[32m dans l'univers &amp#27;[0m&amp#27;[32m&amp#27;[1m"DC"&amp#27;[0m   &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerHero(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mun véhicule magique immatriculé &amp#27;[0m&amp#27;[32m&amp#27;[1m"FLS-123"&amp#27;[0m                                      &amp#27;[90m# com.fusion.facade.steps.FusionSteps.creerVehicule(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mj'associe le héros au véhicule via la façade&amp#27;[0m                                  &amp#27;[90m# com.fusion.facade.steps.FusionSteps.associerAvecFacade()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mj'enregistre une mission de &amp#27;[0m&amp#27;[32m&amp#27;[1m1200&amp#27;[0m&amp#27;[32m km&amp#27;[0m                                            &amp#27;[90m# com.fusion.facade.steps.FusionSteps.enregistrerMission(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mle kilométrage du véhicule vaut &amp#27;[0m&amp#27;[32m&amp#27;[1m1200&amp#27;[0m                                          &amp#27;[90m# com.fusion.facade.steps.FusionSteps.verifierKilometrage(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mle coût d'assurance estimé est &amp#27;[0m&amp#27;[32m&amp#27;[1m301&amp#27;[0m                                             &amp#27;[90m# com.fusion.facade.steps.FusionSteps.verifierAssurance(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
