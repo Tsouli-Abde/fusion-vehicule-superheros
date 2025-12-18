@@ -1,10 +1,10 @@
+package com.dauphine;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.dauphine.SuperHeros;
-import com.dauphine.Univers;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SuperHeroSteps {
 

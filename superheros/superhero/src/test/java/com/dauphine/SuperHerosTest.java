@@ -1,11 +1,10 @@
-import static org.junit.jupiter.api.Assertions.*;
+package com.dauphine;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.dauphine.Groupe;
-import com.dauphine.SuperHeros;
-import com.dauphine.Univers;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Classe de tests unitaires pour SuperHeros
