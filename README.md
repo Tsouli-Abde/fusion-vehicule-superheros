@@ -5,7 +5,7 @@ Ce dépôt assemble deux univers initialement indépendants :
 1. **vehicule-magique** – un projet BlueJ devenu Maven qui modélise des véhicules, leurs propriétaires et tout un arsenal de tests (unitaires, paramétrés, BDD).
 2. **superheros** – une aventure pédagogique narrée par Peter Parker lui‑même, qui introduit la POO, les tests JUnit, les associations bidirectionnelles et le pattern Composite.
 
-Nous avons créé un troisième module, **fusion-facade**, qui applique les design patterns *Adapter* et *Facade* pour orchestrer ces deux domaines sans toucher à leur code historique.
+Nous avons créé un troisième module, **fusion-module**, qui applique les design patterns *Adapter* et *Facade* pour orchestrer ces deux domaines sans toucher à leur code historique.
 
 ---
 
@@ -17,7 +17,7 @@ fusion-vehicule-superheros/
 ├── vehicule-magique/        # jar com.vehiculemagique:vehicule-magique
 ├── superheros/              # pom agrégateur + module superhero
 │   └── superhero/           # jar com.dauphine:superhero
-└── fusion-facade/           # jar com.fusion:fusion-facade (facade + adapter)
+└── fusion-module/           # jar com.fusion:fusion-module (facade + adapter)
 ```
 
 Chaque sous-module reste compilable/tests indépendants, le parent lance la totalité via `mvn test`.
@@ -29,10 +29,10 @@ Chaque sous-module reste compilable/tests indépendants, le parent lance la tota
 ```mermaid
 classDiagram
     %% Relationships
-    FusionVehiculeSuperHeroFacade ..> HeroProprietaireAdapter : instantiates
-    FusionVehiculeSuperHeroFacade ..> FusionSession : returns
-    FusionSession --> HeroProprietaireAdapter : delegates
-    FusionSession --> Vehicule : manipulates
+    Garage ..> HeroProprietaireAdapter : instantiates
+    Garage ..> GarageSession : returns
+    GarageSession --> HeroProprietaireAdapter : delegates
+    GarageSession --> Vehicule : manipulates
 
     HeroProprietaireAdapter --> SuperHeros : wrappe
     HeroProprietaireAdapter *-- Proprietaire : compose
@@ -106,15 +106,15 @@ classDiagram
             +asProprietaire() Proprietaire
             +assignerVehicule(Vehicule)
             +calculerAssurance(Vehicule) int
-            +descriptionFusion(Vehicule) String
+            +description(Vehicule) String
         }
     }
 
     namespace com_fusion_facade {
-        class FusionVehiculeSuperHeroFacade {
-            +fusionner(SuperHeros, Vehicule) FusionSession
+        class Garage {
+            +fusionner(SuperHeros, Vehicule) Garage.Session
         }
-        class FusionSession {
+        class GarageSession {
             -HeroProprietaireAdapter adapter
             -Vehicule vehicule
             +getHero() SuperHeros
@@ -144,19 +144,20 @@ classDiagram
 
 ---
 
-## 🧱 Nouveau module : fusion-facade
+## 🧱 Nouveau module : fusion-module
 
 | Composant | Description |
 |---|---|
 | `HeroProprietaireAdapter` | *Adapter* qui expose un `SuperHeros` comme un `Proprietaire`. Il synchronise les informations (nom, véhicules, calcul d’assurance) sans modifier les projets sources. |
-| `FusionVehiculeSuperHeroFacade` | *Facade* fournissant une API simplifiée pour fusionner un héros et un véhicule (création d’une `FusionSession`, enregistrement de missions, calcul d’assurance, message combiné). |
-| `FusionVehiculeSuperHeroFacadeTest` | Test JUnit démontrant la collaboration façade + adapter. |
-| `features/FusionFacade.feature` | User stories BDD décrivant l’usage métier de la fusion (mission motorisée, scénarios outline multi-héros/kilométrage). |
-| `FusionSteps` | Implémentation Cucumber (glue `com.fusion.facade.steps`) orchestrant la façade dans les scénarios. |
+| `Garage` | *Facade* fournissant une API simplifiée pour fusionner un héros et un véhicule (création d’une `Garage.Session`, enregistrement de missions, calcul d’assurance, message combiné). |
+| `GarageTest` | Test JUnit démontrant la collaboration façade + adapter. |
+| `features/Garage.feature` | User stories BDD décrivant l’usage métier de la façade (mission motorisée, scénarios outline multi-héros/kilométrage). |
+| `features/adapter.feature` | Stories BDD centrées sur l’adapter pour valider l’enrobage `SuperHeros` → `Proprietaire`. |
+| `GarageSteps` / `AdapterSteps` | Implémentations Cucumber (glue `com.fusion.facade.steps`) orchestrant respectivement la façade et l’adapter. |
 
 ### Design patterns utilisés
 - **Adapter** : `HeroProprietaireAdapter` convertit l’API superhéros vers celle attendue par vehicule-magique.
-- **Facade** : `FusionVehiculeSuperHeroFacade` masque la complexité et expose une API orientée cas d’usage.
+- **Facade** : `Garage` (et sa `Session`) masquent la complexité et exposent une API orientée cas d’usage.
 - **Composite** (hérité du module SuperHeros).
 
 ---
@@ -165,8 +166,8 @@ classDiagram
 
 Les tests d’origine des deux projets (JUnit + Cucumber) continuent à fonctionner tels quels. Le nouveau module ajoute :
 
-- 1 test JUnit classique (`FusionVehiculeSuperHeroFacadeTest`).
-- 4 scénarios Cucumber décrivant les user stories de fusion (`FusionFacade.feature`).
+- 1 test JUnit classique (`GarageTest`).
+- 2 features Cucumber (`Garage.feature` et `adapter.feature`) couvrant façade et adapter.
 
 Commande globale :
 
@@ -177,12 +178,12 @@ mvn test
 Pour limiter aux nouvelles features :
 
 ```bash
-mvn -pl fusion-facade test        # uniquement le module façade
+mvn -pl fusion-module test        # uniquement le module façade
 ```
 
 ---
 
-## 🧪 User stories BDD (fusion-facade)
+## 🧪 User stories BDD (fusion-module)
 
 ```
 Feature: Fusion des univers Super Hero et Vehicule Magique
@@ -201,7 +202,7 @@ Feature: Fusion des univers Super Hero et Vehicule Magique
     ...
 ```
 
-Ces scénarios vivent dans `fusion-facade/src/test/resources/features/FusionFacade.feature` et utilisent les steps `FusionSteps`.
+Ces scénarios vivent dans `fusion-module/src/test/resources/features/Garage.feature` (façade) et `adapter.feature` (adapter) et utilisent les steps `GarageSteps` et `AdapterSteps`.
 
 ---
 
@@ -212,14 +213,14 @@ Ces scénarios vivent dans `fusion-facade/src/test/resources/features/FusionFaca
 git clone <repo>
 cd fusion-vehicule-superheros
 
-# Compiler + exécuter tous les tests (vehicule-magique, superhero, fusion-facade)
+# Compiler + exécuter tous les tests (vehicule-magique, superhero, fusion-module)
 mvn clean test
 ```
 
 Ensuite, explore les sous-modules :
 - `vehicule-magique/` – logique véhicule/propriétaire + BDD
 - `superheros/superhero/` – logique super héros + BDD + Composite
-- `fusion-facade/` – façade, adapter, stories de fusion
+- `fusion-module/` – façade, adapter, stories de fusion
 
 ---
 

@@ -1,14 +1,14 @@
 # Class Diagram
 
-This diagram illustrates the structure of the project, including the relationships between the `superheros`, `vehicule-magique`, and `fusion-facade` modules.
+This diagram illustrates the structure of the project, including the relationships between the `superheros`, `vehicule-magique`, and `fusion-module` modules.
 
 ```mermaid
 classDiagram
     %% Relationships
-    FusionVehiculeSuperHeroFacade ..> HeroProprietaireAdapter : instantiates
-    FusionVehiculeSuperHeroFacade ..> FusionSession : returns
-    FusionSession --> HeroProprietaireAdapter : delegates
-    FusionSession --> Vehicule : manipulates
+    Garage ..> HeroProprietaireAdapter : instantiates
+    Garage ..> GarageSession : returns
+    GarageSession --> HeroProprietaireAdapter : delegates
+    GarageSession --> Vehicule : manipulates
 
     HeroProprietaireAdapter --> SuperHeros : wrappe
     HeroProprietaireAdapter *-- Proprietaire : compose
@@ -82,15 +82,15 @@ classDiagram
             +asProprietaire() Proprietaire
             +assignerVehicule(Vehicule)
             +calculerAssurance(Vehicule) int
-            +descriptionFusion(Vehicule) String
+            +description(Vehicule) String
         }
     }
 
     namespace com_fusion_facade {
-        class FusionVehiculeSuperHeroFacade {
-            +fusionner(SuperHeros, Vehicule) FusionSession
+        class Garage {
+            +fusionner(SuperHeros, Vehicule) Garage.Session
         }
-        class FusionSession {
+        class GarageSession {
             -HeroProprietaireAdapter adapter
             -Vehicule vehicule
             +getHero() SuperHeros

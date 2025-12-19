@@ -1,1 +1,5 @@
 superheros/superhero/target
+.DS_Store
+**/.DS_Store
+**/target/
+fusion-module/target
